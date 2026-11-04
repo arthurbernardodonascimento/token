@@ -214,4 +214,71 @@ document.addEventListener('DOMContentLoaded', () => {
         if (existe) selectInteresse.value = interesseUrl;
     }
 
+    // 8. VÍDEO CONTROLADO PELO SCROLL (index.html)
+    // A seção .scrub é alta e o conteúdo fica "colado" (sticky); o progresso do scroll
+    // dentro dela define o instante do vídeo. Com movimento reduzido, vira um vídeo normal com controles.
+    const secaoScrub = document.getElementById('video-scroll');
+    const videoScrub = secaoScrub ? secaoScrub.querySelector('[data-scrub-video]') : null;
+
+    if (secaoScrub && videoScrub) {
+        const barra = secaoScrub.querySelector('[data-scrub-bar]');
+        const legenda = secaoScrub.querySelector('[data-scrub-caption]');
+        const dica = secaoScrub.querySelector('[data-scrub-hint]');
+        const legendas = [
+            'Câmera PTZ TOKEN LINK',
+            'Montagem de precisão, peça por peça',
+            'Lente, sensor e placas: cada componente no lugar certo'
+        ];
+
+        if (prefereMenosMovimento) {
+            secaoScrub.classList.add('scrub--static');
+            videoScrub.controls = true;
+            videoScrub.preload = 'metadata';
+        } else {
+            let alvo = 0;      // instante desejado (s), vindo do scroll
+            let atual = 0;     // instante exibido (s), suavizado
+            let rodando = false;
+            let legendaAtual = -1;
+
+            const progressoScroll = () => {
+                const r = secaoScrub.getBoundingClientRect();
+                const total = r.height - window.innerHeight;
+                return total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 0;
+            };
+
+            const quadro = () => {
+                const dur = videoScrub.duration;
+                if (dur && isFinite(dur)) {
+                    atual += (alvo - atual) * 0.18;
+                    if (Math.abs(alvo - atual) < 0.005) atual = alvo;
+                    if (Math.abs(videoScrub.currentTime - atual) > 0.012 && !videoScrub.seeking) {
+                        videoScrub.currentTime = atual;
+                    }
+                }
+                rodando = atual !== alvo;
+                if (rodando) requestAnimationFrame(quadro);
+            };
+
+            const atualizar = () => {
+                const p = progressoScroll();
+                const dur = videoScrub.duration;
+                if (dur && isFinite(dur)) alvo = p * dur;
+                if (barra) barra.style.width = (p * 100).toFixed(1) + '%';
+                if (dica) dica.style.opacity = p > 0.04 ? '0' : '1';
+                const i = p < 0.34 ? 0 : (p < 0.67 ? 1 : 2);
+                if (legenda && i !== legendaAtual) {
+                    legendaAtual = i;
+                    legenda.textContent = legendas[i];
+                }
+                if (!rodando) { rodando = true; requestAnimationFrame(quadro); }
+            };
+
+            videoScrub.pause();
+            videoScrub.addEventListener('loadedmetadata', atualizar);
+            window.addEventListener('scroll', atualizar, { passive: true });
+            window.addEventListener('resize', atualizar);
+            atualizar();
+        }
+    }
+
 });
