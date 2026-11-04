@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos - Tokenlink</title>
+    <meta name="description" content="Catálogo Tokenlink: câmeras PTZ, mesas controladoras, acessórios e informática com servidores de alto desempenho para transmissão e produção.">
+    <meta name="theme-color" content="#020617">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Tokenlink">
+    <meta property="og:title" content="Catálogo de Produtos - Tokenlink">
+    <meta property="og:description" content="Câmeras PTZ, controladoras, acessórios e servidores de alto desempenho para transmissão e produção.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- TODO: quando o domínio estiver definido, adicionar "image" (URL absoluta), <link rel="canonical"> e og:image/og:url -->
+</head>
+<body class="text-white antialiased selection:bg-cyan-500 selection:text-white">
+
+    <div class="liquid-blob blob-1" aria-hidden="true"></div>
+    <div class="liquid-blob blob-2" aria-hidden="true"></div>
+
+    <nav class="site-nav py-4" aria-label="Navegação principal">
+        <div class="flex items-center justify-between">
+            <a href="index.html" class="flex-shrink-0 flex items-center gap-2" aria-label="Tokenlink - página inicial">
+                <i class="fa-solid fa-link text-cyan-400 text-3xl"></i>
+                <span class="font-display text-xl font-bold tracking-wider text-white">TOKEN<span class="text-cyan-400">LINK</span></span>
+            </a>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-200 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors">Início</a>
+                    <a href="produtos.html" aria-current="page" class="text-white font-bold px-3 py-2 text-sm">Catálogo</a>
+                    <a href="index.html#contato" class="btn inline-block px-6 py-2 text-sm font-medium">Fale Conosco</a>
+                </div>
+            </div>
+            <button id="menu-toggle" type="button" class="md:hidden text-cyan-200/70 text-2xl w-10 h-10 flex items-center justify-center" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pt-4 border-t border-cyan-900/50 flex flex-col gap-3">
+            <a href="index.html" class="text-gray-200 hover:text-cyan-400 py-2 text-base font-medium transition-colors">Início</a>
+            <a href="produtos.html" aria-current="page" class="text-white font-bold py-2 text-base">Catálogo</a>
+            <a href="index.html#contato" class="btn px-6 py-3 text-center font-medium">Fale Conosco</a>
+        </div>
+    </nav>
+
+    
+
+    <main class="relative z-10">
+
+        <!-- Cabeçalho da página -->
+        <section class="pt-40 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+            <h1 class="title-xl mb-4">Nosso <span class="text-cyan-400/60">Catálogo</span></h1>
+            <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                Equipamentos profissionais para transmissão ao vivo, estúdios, produção audiovisual, informática e projetos corporativos.
+            </p>
+            <nav aria-label="Categorias do catálogo" class="flex flex-wrap justify-center gap-3 mt-8">
+                <a class="chip hover:text-white transition-colors" href="#cameras-ptz">Câmeras PTZ</a>
+                <a class="chip hover:text-white transition-colors" href="#mesas-controladoras">Mesas controladoras</a>
+                <a class="chip hover:text-white transition-colors" href="#acessorios">Acessórios</a>
+                <a class="chip hover:text-white transition-colors" href="#informatica">Informática</a>
+            </nav>
+        </section>
+
+        <!-- Lista de produtos -->
+        <section class="pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="flex items-center gap-4 mb-8 border-b border-cyan-900/50 pb-4">
+                <i class="fa-solid fa-video text-3xl text-cyan-400"></i>
+                <h2 id="cameras-ptz" class="h-section" style="margin-bottom:0">Câmeras PTZ</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Produto: TOKEN LINK PTZ NDI 20X - Gen 2 -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-white mb-5">
+                        <img src="img/frente.webp" alt="Câmera TOKEN LINK PTZ NDI 20X - Gen 2" width="1000" height="1000" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">TOKEN LINK PTZ NDI 20X - Gen 2</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Zoom 20X | 1080p60 | NDI HX | PoE</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Saída simultânea por SDI, HDMI e NDI, rastreamento automático (auto-tracking), lente Tamron e sensor Sony CMOS. Compatível com produtos NEOID.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-ptz-ndi-20x-gen2.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=C%C3%A2meras%20PTZ&amp;produto=TOKEN%20LINK%20PTZ%20NDI%2020X%20-%20Gen%202#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto: TOKEN LINK PTZ NDI 30X - Gen 2 -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-white mb-5">
+                        <img src="img/frente.webp" alt="Câmera TOKEN LINK PTZ NDI 30X - Gen 2" width="1000" height="1000" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">TOKEN LINK PTZ NDI 30X - Gen 2</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Zoom 30X | 1080p60 | NDI Full / HX3 | PoE+</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Sensor Sony IMX327, redução de ruído 2D/3D, auto-tracking por IA e integração avançada por VISCA, VISCA-IP e NDI para produções de alto nível.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-ptz-ndi-30x-gen2.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=C%C3%A2meras%20PTZ&amp;produto=TOKEN%20LINK%20PTZ%20NDI%2030X%20-%20Gen%202#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto: TOKEN LINK PTZ USB 4K PRO MAX -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-white mb-5">
+                        <img src="img/4k-frente.webp" alt="Câmera TOKEN LINK PTZ USB 4K PRO MAX" width="1000" height="1000" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">TOKEN LINK PTZ USB 4K PRO MAX</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Zoom 12X | 4K30 | USB 3.0 Tipo-C | PoE</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Imagem 4K a 30 fps com saída simultânea por HDMI, IP e USB 3.0, auto-tracking por IA e controle por VISCA e ONVIF.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-ptz-usb-4k-pro-max.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=C%C3%A2meras%20PTZ&amp;produto=TOKEN%20LINK%20PTZ%20USB%204K%20PRO%20MAX#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto: TOKEN LINK PTZ 30X 4K -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-[#f9f9f9] mb-5">
+                        <img src="img/30x4k-frente.webp" alt="Câmera TOKEN LINK PTZ 30X 4K" width="1000" height="1000" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">TOKEN LINK PTZ 30X 4K</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Zoom 30X | 4K60 | NDI HX | SRT | PoE+</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Sensor Sony de 12 MP, saída simultânea por NDI|HX, 3G-SDI, HDMI e USB 3.0 Tipo-C, SRT para redes instáveis e foco rápido e preciso.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-ptz-30x-4k.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=C%C3%A2meras%20PTZ&amp;produto=TOKEN%20LINK%20PTZ%2030X%204K#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto: TOKEN LINK PTZ NDI 4K -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-white mb-5">
+                        <img src="img/ndi4k-frente.webp" alt="Câmera TOKEN LINK PTZ NDI 4K" width="1000" height="1000" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">TOKEN LINK PTZ NDI 4K</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Zoom 20X | 4K60 | NDI | PoE+</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Auto-tracking, saída simultânea por NDI, SDI e HDMI, sensor Sony 4K de 1/1,8″ e alimentação PoE+. Compatível com produtos NEOID.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-ptz-ndi-4k.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=C%C3%A2meras%20PTZ&amp;produto=TOKEN%20LINK%20PTZ%20NDI%204K#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto: TOKEN LINK PTZ USB PRO MAX -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-white mb-5">
+                        <img src="img/usbpro-frente.webp" alt="Câmera TOKEN LINK PTZ USB PRO MAX" width="1000" height="1000" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">TOKEN LINK PTZ USB PRO MAX</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Zoom 12X | 1080p60 | USB 3.0 | PoE</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Saídas HDMI, USB 3.0 e IP com Dual Stream, protocolos RTSP, SRT e RTMP e alimentação por PoE, DC 12V ou USB 5V.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-ptz-usb-pro-max.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=C%C3%A2meras%20PTZ&amp;produto=TOKEN%20LINK%20PTZ%20USB%20PRO%20MAX#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 mb-8 mt-16 border-b border-cyan-900/50 pb-4">
+                <i class="fa-solid fa-gamepad text-3xl text-cyan-400"></i>
+                <h2 id="mesas-controladoras" class="h-section" style="margin-bottom:0">Mesas controladoras</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Produto: TOKEN LINK PTZ Controller IP+ -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-white mb-5">
+                        <img src="img/mesa-ip-topo.webp" alt="Mesa controladora TOKEN LINK PTZ Controller IP+" width="1000" height="1000" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">TOKEN LINK PTZ Controller IP+</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Joystick 4D | 255 presets | PoE</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Controle simultâneo de pan, tilt, zoom e foco, 7 botões de atalho, display LCD e configuração por servidor web. Compatível com produtos NEOiD.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-ptz-controller-ip.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=Mesas%20controladoras&amp;produto=TOKEN%20LINK%20PTZ%20Controller%20IP%2B#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto: tokenlink PTZ Controller NDI -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-white mb-5">
+                        <img src="img/mesa-ndi-topo.webp" alt="Mesa controladora tokenlink PTZ Controller NDI" width="1000" height="1000" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">tokenlink PTZ Controller NDI</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Joystick 4D | NDI | PoE</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Protocolos NDI, VISCA sobre IP, ONVIF e PELCO, display OLED, 7 botões de atalho, daisy chain de até 7 câmeras e alimentação PoE ou DC 12V.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-ptz-controller-ndi.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=Mesas%20controladoras&amp;produto=tokenlink%20PTZ%20Controller%20NDI#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 mb-8 mt-16 border-b border-cyan-900/50 pb-4">
+                <i class="fa-solid fa-screwdriver-wrench text-3xl text-cyan-400"></i>
+                <h2 id="acessorios" class="h-section" style="margin-bottom:0">Acessórios</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Produto: Suporte de parede para câmeras PTZ TOKEN LINK -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-white mb-5">
+                        <img src="img/suporte-1.webp" alt="Mesa controladora Suporte de parede para câmeras PTZ TOKEN LINK" width="1000" height="1000" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">Suporte de parede para câmeras PTZ TOKEN LINK</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Posição padrão ou invertida</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Instalação da câmera PTZ na parede, com orifícios para passagem de cabos na base e na lateral para uma instalação limpa e organizada.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-suporte-parede-ptz.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=Acess%C3%B3rios&amp;produto=Suporte%20de%20parede%20para%20c%C3%A2meras%20PTZ%20TOKEN%20LINK#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Nova categoria: Informática -->
+            <div class="flex items-center gap-4 mb-8 mt-16 border-b border-cyan-900/50 pb-4">
+                <i class="fa-solid fa-computer text-3xl text-cyan-400" aria-hidden="true"></i>
+                <h2 id="informatica" class="h-section" style="margin-bottom:0">Informática</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Produto: Servidor TOKENLINK StreamCore -->
+                <div class="card p-6 flex flex-col h-full group">
+                    <div class="overflow-hidden rounded-2xl bg-white mb-5">
+                        <img src="img/streamcore-gabinete.webp" alt="Gabinete Montech preto do Servidor TOKENLINK StreamCore, com lateral de vidro temperado e frente em malha" width="1254" height="1254" loading="lazy" class="w-full h-56 object-contain p-2 group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <h3 class="h-card">Servidor TOKENLINK StreamCore</h3>
+                        <p class="text-sm text-cyan-300 mb-4 font-semibold">Intel Core i9 | RTX 5060 Ti 16 GB | 32 GB DDR5 | 3 TB SSD</p>
+                        <p class="text-gray-300 text-sm mb-6 flex-grow">
+                            Estação de alto desempenho para transmissão, renderização e inteligência artificial, com processador Intel Core i9-14900KF, placa-mãe ASUS Prime Z790-P WIFI, refrigeração líquida de 360 mm e fonte de 850 W 80 Plus Gold.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-auto">
+                            <a href="produto-servidor-streamcore.html" class="btn block py-3 w-full text-center font-bold text-sm">Ver detalhes</a>
+                            <a href="index.html?interesse=Inform%C3%A1tica&amp;produto=Servidor%20TOKENLINK%20StreamCore#contato" class="btn btn-secondary block py-3 w-full text-center font-bold text-sm">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="relative z-10 border-t border-cyan-900/50 bg-black/20 backdrop-blur-sm py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i class="fa-solid fa-link text-cyan-400 text-2xl"></i>
+                <span class="font-display text-lg font-bold tracking-wider text-white">TOKEN<span class="text-cyan-400">LINK</span></span>
+            </div>
+            <p class="text-cyan-200/70 text-sm text-center md:text-left">&copy; 2026 Tokenlink Soluções Audiovisuais.</p>
+            <!-- TODO: substituir "#" pelos links reais das redes sociais -->
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" aria-label="Instagram" class="text-cyan-400/50 hover:text-cyan-300 transition-colors"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                <a href="#" aria-label="YouTube" class="text-cyan-400/50 hover:text-cyan-300 transition-colors"><i class="fa-brands fa-youtube text-2xl"></i></a>
+                <a href="#" aria-label="LinkedIn" class="text-cyan-400/50 hover:text-cyan-300 transition-colors"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

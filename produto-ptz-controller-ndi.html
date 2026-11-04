@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tokenlink PTZ Controller NDI - Tokenlink</title>
+    <meta name="description" content="Mesa controladora PTZ com NDI, VISCA sobre IP, ONVIF, PELCO, joystick 4D, display OLED, 7 botões de atalho e alimentação PoE ou DC 12V.">
+    <meta name="theme-color" content="#020617">
+    <meta property="og:type" content="product">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Tokenlink">
+    <meta property="og:title" content="tokenlink PTZ Controller NDI">
+    <meta property="og:description" content="Mesa controladora PTZ com NDI, joystick 4D, display OLED e alimentação PoE.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- TODO: quando o domínio estiver definido, adicionar "image" (URL absoluta), <link rel="canonical"> e og:image/og:url -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Product","name":"tokenlink PTZ Controller NDI","brand":{"@type":"Brand","name":"TOKEN LINK"},"description":"Mesa controladora PTZ com NDI, VISCA sobre IP, ONVIF, PELCO, joystick 4D, display OLED, 7 botões de atalho e alimentação PoE ou DC 12V."}
+    </script>
+</head>
+<body class="text-white antialiased selection:bg-cyan-500 selection:text-white">
+
+    <div class="liquid-blob blob-1" aria-hidden="true"></div>
+    <div class="liquid-blob blob-2" aria-hidden="true"></div>
+
+    <nav class="site-nav py-4" aria-label="Navegação principal">
+        <div class="flex items-center justify-between">
+            <a href="index.html" class="flex-shrink-0 flex items-center gap-2" aria-label="Tokenlink - página inicial">
+                <i class="fa-solid fa-link text-cyan-400 text-3xl"></i>
+                <span class="font-display text-xl font-bold tracking-wider text-white">TOKEN<span class="text-cyan-400">LINK</span></span>
+            </a>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-200 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors">Início</a>
+                    <a href="produtos.html" aria-current="page" class="text-white font-bold px-3 py-2 text-sm">Catálogo</a>
+                    <a href="index.html#contato" class="btn inline-block px-6 py-2 text-sm font-medium">Fale Conosco</a>
+                </div>
+            </div>
+            <button id="menu-toggle" type="button" class="md:hidden text-cyan-200/70 text-2xl w-10 h-10 flex items-center justify-center" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pt-4 border-t border-cyan-900/50 flex flex-col gap-3">
+            <a href="index.html" class="text-gray-200 hover:text-cyan-400 py-2 text-base font-medium transition-colors">Início</a>
+            <a href="produtos.html" aria-current="page" class="text-white font-bold py-2 text-base">Catálogo</a>
+            <a href="index.html#contato" class="btn px-6 py-3 text-center font-medium">Fale Conosco</a>
+        </div>
+    </nav>
+
+    <main class="relative z-10">
+
+        <!-- Topo do produto -->
+        <section class="pt-36 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <nav aria-label="Você está aqui" class="text-sm text-cyan-200/70 mb-8 flex flex-wrap items-center gap-2">
+                <a href="produtos.html" class="hover:text-cyan-400 transition-colors">Catálogo</a>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+                <a href="produtos.html" class="hover:text-cyan-400 transition-colors">Mesas controladoras</a>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+                <span class="text-white">PTZ Controller NDI</span>
+            </nav>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+
+                <!-- Galeria (as fotos têm fundo branco, então ficam em uma "bancada" clara) -->
+                <div class="card p-2 w-full max-w-xl mx-auto lg:mx-0">
+                    <div data-gallery>
+                        <div class="product-stage" data-gallery-stage>
+                            <img src="img/mesa-ndi-topo.webp" alt="Mesa controladora tokenlink PTZ Controller NDI, vista superior" width="1000" height="1000" data-gallery-main>
+                        </div>
+                        <p class="text-center text-sm text-cyan-200/70 mt-3" data-gallery-caption aria-live="polite">Vista superior</p>
+                        <div class="grid grid-cols-2 gap-2 mt-3 px-1 pb-1">
+                            <button type="button" class="thumb" data-full="img/mesa-ndi-topo.webp" data-bg="#fff" data-label="Vista superior" aria-label="Ver imagem: Vista superior" aria-current="true">
+                                <img src="img/mesa-ndi-topo-thumb.webp" alt="Mesa controladora tokenlink PTZ Controller NDI, vista superior" width="300" height="300">
+                            </button>
+                            <button type="button" class="thumb" data-full="img/mesa-ndi-traseira.webp" data-bg="#fff" data-label="Vista traseira (conexões)" aria-label="Ver imagem: Vista traseira">
+                                <img src="img/mesa-ndi-traseira-thumb.webp" alt="Mesa controladora tokenlink PTZ Controller NDI, vista traseira com o painel de conexões" width="300" height="300" loading="lazy">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informações principais -->
+                <div class="space-y-6">
+                    <div class="inline-block px-4 py-1 rounded-full border border-cyan-400/50 text-cyan-300 text-sm font-semibold backdrop-blur-md bg-cyan-900/20">Mesas controladoras</div>
+                    <h1 class="title-xl title-sm">tokenlink PTZ Controller NDI</h1>
+                    <p class="text-lg text-gray-300 max-w-xl">
+                        Joystick 4D, display OLED, 7 botões de atalho, NDI, VISCA, ONVIF e PELCO, daisy chain de até 7 câmeras e alimentação PoE ou DC 12V. 
+                    </p>
+
+                    <ul class="flex flex-wrap gap-2" aria-label="Destaques">
+                        <li class="chip">Joystick 4D</li>
+                        <li class="chip">NDI</li>
+                        <li class="chip">VISCA / ONVIF / PELCO</li>
+                        <li class="chip">Display OLED</li>
+                        <li class="chip">Daisy chain</li>
+                        <li class="chip">Atualização via USB-C</li>
+                    </ul>
+
+                    <dl class="grid grid-cols-2 gap-4">
+                        <div class="stat"><dt>Joystick</dt><dd>4D</dd></div>
+                        <div class="stat"><dt>Botões de atalho</dt><dd>7 (CAM1 a CAM7)</dd></div>
+                        <div class="stat"><dt>Daisy chain</dt><dd>Até 7 câmeras</dd></div>
+                        <div class="stat"><dt>Alimentação</dt><dd>PoE ou 12V</dd></div>
+                    </dl>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="index.html?interesse=Mesas%20controladoras&amp;produto=tokenlink%20PTZ%20Controller%20NDI#contato" class="btn inline-block py-3 px-8 text-center font-bold">Solicitar orçamento</a>
+                        <a href="#" data-whatsapp="Olá, Tokenlink! Tenho interesse na mesa controladora tokenlink PTZ Controller NDI. Gostaria de um orçamento." target="_blank" rel="noopener" class="btn btn-wa inline-flex items-center gap-2 py-3 px-8 text-center font-bold">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Chamar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Descrição -->
+        <section class="pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="card p-8 md:p-12">
+                <h2 class="h-section">Sobre a mesa</h2>
+                <div class="prose-hud space-y-5 text-gray-300 leading-relaxed">
+                    <p>O tokenlink PTZ Controller NDI é um painel de controle de câmera Pan-Tilt-Zoom (PTZ) altamente multifuncional e potente, concebido para proporcionar domínio exato e eficaz em cenários profissionais. Com sua vasta compatibilidade e funcionalidades acessíveis, é uma resposta eficiente e versátil para diversas aplicações.</p>
+<h3 class="h-card" style="margin-top:1.5rem;margin-bottom:0">Joystick responsivo para domínio preciso de movimentos</h3>
+                    <p>O controlador está equipado com um joystick quadridimensional altamente sensível, que permite comandar com suavidade e exatidão a rotação e o zoom da câmera. Essa precisão dá aos operadores a capacidade de capturar os melhores ângulos de visão e obter imagens de alto nível.</p>
+<h3 class="h-card" style="margin-top:1.5rem;margin-bottom:0">Interface acessível e acesso rápido às funções</h3>
+                    <p>O controlador tem uma disposição simples e nítida, projetada para facilitar o acesso rápido às funções e aos ajustes da câmera. Seu display exibe dados detalhados sobre o estado da câmera e do comando, dando ao operador uma visão clara e abrangente do ambiente de filmagem.</p>
+<h3 class="h-card" style="margin-top:1.5rem;margin-bottom:0">Operação descomplicada com recursos avançados</h3>
+                    <p>Os botões de comando e de função permitem regular o modo de exposição, o balanço de branco e o foco da câmera de acordo com as preferências e as exigências de cada cena. Os parâmetros de imagem também podem ser ajustados para otimizar a qualidade visual.</p>
+<h3 class="h-card" style="margin-top:1.5rem;margin-bottom:0">Vasta compatibilidade de protocolos</h3>
+                    <p>Uma das características notáveis do painel é a extensa compatibilidade com protocolos. Ele suporta NDI, VISCA sobre IP, VISCA serial, ONVIF e PELCO P/D, permitindo comandar várias câmeras com diferentes protocolos por um único teclado, ou por vários teclados conectados em rede. Isso dá flexibilidade e facilidade de uso em ambientes de produção com diversidade de câmeras.</p>
+<h3 class="h-card" style="margin-top:1.5rem;margin-bottom:0">Conectividade multifuncional</h3>
+                    <p>O controlador oferece diversas portas de controle: suporta as interfaces RS232, RS485, RS422 e RJ45, permitindo ligação com uma vasta gama de câmeras e sistemas. Também suporta Power over Ethernet (PoE) e tem conexão de rede RJ45 adaptável, para uma comunicação segura e de alta velocidade entre o controlador e as câmeras.</p>
+                    <p>Em resumo, o tokenlink PTZ Controller NDI se destaca como uma resposta confiável para o controle e a administração de câmeras PTZ em estúdios de produção, transmissões ao vivo, eventos corporativos e muito mais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especificações -->
+        <section class="pb-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+            <div class="mb-8 border-b border-cyan-900/50 pb-4 flex items-center gap-4">
+                <i class="fa-solid fa-sliders text-3xl text-cyan-400"></i>
+                <h2 class="h-section" style="margin-bottom:0">Especificações técnicas</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-8">
+            <div class="card p-6 h-full">
+                <h3 class="h-card flex items-center gap-3 mb-4"><i class="fa-solid fa-gamepad text-cyan-400"></i>Controle e operação</h3>
+                <dl>
+                    <div class="spec-row"><dt>Botões</dt><dd>Sete botões de atalho de câmera (CAM1 a CAM7)</dd></div>
+                    <div class="spec-row"><dt>Display</dt><dd>Tela OLED de 3,12″, luz azul, 256×64 pixels</dd></div>
+                    <div class="spec-row"><dt>Configuração</dt><dd>Permite configurar diferentes protocolos para controlar várias câmeras com protocolos diferentes</dd></div>
+                    <div class="spec-row"><dt>Daisy chain</dt><dd>Suportado (máximo de 7 câmeras)</dd></div>
+                </dl>
+            </div>
+            <div class="card p-6 h-full">
+                <h3 class="h-card flex items-center gap-3 mb-4"><i class="fa-solid fa-network-wired text-cyan-400"></i>Conexões e protocolos</h3>
+                <dl>
+                    <div class="spec-row"><dt>Interfaces de controle</dt><dd>RJ45, RS232, RS422, RS485, porta Ethernet, PoE</dd></div>
+                    <div class="spec-row"><dt>Interface de atualização</dt><dd>USB Tipo-C</dd></div>
+                    <div class="spec-row"><dt>Protocolos suportados</dt><dd>VISCA serial, Pelco-P, Pelco-D, VISCA sobre IP, VISCA TCP, VISCA UDP, ONVIF, NDI</dd></div>
+                </dl>
+            </div>
+            <div class="card p-6 h-full">
+                <h3 class="h-card flex items-center gap-3 mb-4"><i class="fa-solid fa-bolt text-cyan-400"></i>Alimentação e físico</h3>
+                <dl>
+                    <div class="spec-row"><dt>Alimentação</dt><dd>PoE (Power over Ethernet) e fonte DC 12V</dd></div>
+                    <div class="spec-row"><dt>Potência de trabalho</dt><dd>12V 1A</dd></div>
+                    <div class="spec-row"><dt>Temperatura de trabalho</dt><dd>-10 °C ~ 50 °C</dd></div>
+                    <div class="spec-row"><dt>Umidade de trabalho</dt><dd>≤ 80%</dd></div>
+                    <div class="spec-row"><dt>Temperatura de armazenamento</dt><dd>-20 °C ~ 60 °C</dd></div>
+                    <div class="spec-row"><dt>Umidade de armazenamento</dt><dd>≤ 90%</dd></div>
+                    <div class="spec-row"><dt>Dimensões</dt><dd>320,5 × 156,5 × 118 mm</dd></div>
+                    <div class="spec-row"><dt>Peso</dt><dd>1,05 kg</dd></div>
+                </dl>
+            </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <h2 class="h-section">Quer essa mesa no seu projeto?</h2>
+                <p class="text-gray-300 mb-8">Informe o tipo de instalação e a quantidade de mesas e nossa equipe prepara o orçamento.</p>
+                <a href="index.html?interesse=Mesas%20controladoras&amp;produto=tokenlink%20PTZ%20Controller%20NDI#contato" class="btn inline-block py-4 px-10 text-lg font-bold">Solicitar orçamento</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="relative z-10 border-t border-cyan-900/50 bg-black/20 backdrop-blur-sm py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i class="fa-solid fa-link text-cyan-400 text-2xl"></i>
+                <span class="font-display text-lg font-bold tracking-wider text-white">TOKEN<span class="text-cyan-400">LINK</span></span>
+            </div>
+            <p class="text-cyan-200/70 text-sm text-center md:text-left">&copy; 2026 Tokenlink Soluções Audiovisuais.</p>
+            <!-- TODO: substituir "#" pelos links reais das redes sociais -->
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" aria-label="Instagram" class="text-cyan-400/50 hover:text-cyan-300 transition-colors"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                <a href="#" aria-label="YouTube" class="text-cyan-400/50 hover:text-cyan-300 transition-colors"><i class="fa-brands fa-youtube text-2xl"></i></a>
+                <a href="#" aria-label="LinkedIn" class="text-cyan-400/50 hover:text-cyan-300 transition-colors"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+TOKENLINK — CATEGORIA INFORMÁTICA / STREAMCORE
+
+Arquivos alterados:
+- produtos.html: nova categoria Informática, card do StreamCore e navegação por categorias.
+- index.html: texto inicial atualizado e opção Informática no formulário de contato.
+
+Arquivos novos:
+- produto-servidor-streamcore.html: página completa com descrição e ficha técnica.
+- img/streamcore-gabinete.webp: imagem otimizada fornecida para o gabinete.
+
+Os demais arquivos originais foram preservados.
+
+IMPORTANTE:
+- As imagens dos produtos PTZ existentes, referenciadas na pasta img/,
+  não foram enviadas com o projeto e não estão neste pacote.
+  Mantenha a pasta img/ original de seu site ao atualizar os arquivos.
+- Em script.js, o WhatsApp ainda usa número demonstrativo e o formulário
+  ainda exige a configuração de FORM_ENDPOINT antes da publicação.
+- Os dados técnicos do StreamCore foram transcritos dos arquivos
+  "Espec.txt" e "Descricao.txt" enviados. Confirme as especificações
+  comerciais e técnicas antes de anunciar o produto.
+- A foto mostra o gabinete. Os componentes internos e a montagem completa
+  não são representados na imagem fornecida.
